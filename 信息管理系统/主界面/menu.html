@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理系统</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./edit.css">
+    <link rel="stylesheet" href="./query.css">
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="left">
+            <ul>
+                <li class="tab_list left_l">
+                    <span class="iconfont iconfont_left">&#xe924;</span>
+                    <a href="#" class="left_a">主页面</a>
+                    <span class="iconfont iconfont_right">&#xeb6d;</span>
+                </li>
+                <ul class="tab">
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">控制面板</a>
+                    </li>
+                </ul>
+                <li class="tab_list left_l">
+                    <span class="iconfont iconfont_left">&#xe607;</span>
+                    <a href="#" class="left_a">学生信息管理</a>
+                    <span class="iconfont iconfont_right">&#xeb6d;</span>
+                </li>
+                <ul class="tab">
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查看学生信息</a>
+                    </li>
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">添加学生信息</a>
+                    </li>
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查询学生信息</a>
+                    </li>
+                </ul>
+
+                <li class="tab_list left_l">
+                    <span class="iconfont iconfont_left">&#xe607;</span>
+                    <a href="#" class="left_a">教师信息管理</a>
+                    <span class="iconfont iconfont_right">&#xeb6d;</span>
+                </li>
+                <ul class="tab">
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查看教师信息</a>
+                    </li>
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">添加教师信息</a>
+                    </li>
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查询教师信息</a>
+                    </li>
+                </ul>
+                <li class="tab_list left_l">
+                    <span class="iconfont iconfont_left">&#xe607;</span>
+                    <a href="#" class="left_a">班级信息管理</a>
+                    <span class="iconfont iconfont_right">&#xeb6d;</span>
+                </li>
+                <ul class="tab">
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查看班级信息</a>
+                    </li>
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">查询班级信息</a>
+                    </li>
+                </ul>
+                <li class="tab_list left_l">
+                    <span class="iconfont iconfont_left">&#xe70b;</span>
+                    <a href="#" class="left_a">个人中心</a>
+                    <span class="iconfont iconfont_right">&#xeb6d;</span>
+                </li>
+                <ul class="tab">
+                    <li class="left_l hide_color">
+                        <span class="iconfont iconfont_left">&#xe99d;</span>
+                        <a href="#" class="left_a">个人中心</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="title">
+                <ol class="breadcrumb">
+                    <li class="active">控制面板</li>
+                    <li><a href="#">控制面板</a></li>
+                    <li class="active">激活</li>
+                </ol>
+            </div>
+            <div class="content">
+                <div class="item">控制面板</div>
+                <div class="item">
+                    <h3>查看学生信息</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">学号</th>
+                                    <th class="menu_th">姓名</th>
+                                    <th class="menu_th">年龄</th>
+                                    <th class="menu_th">性别</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学院</th>
+                                    <th class="menu_th">专业</th>
+                                    <th class="menu_th">家庭住址</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">13515163321</td>
+                                    <td class="menu_td">张三</td>
+                                    <td class="menu_td">22</td>
+                                    <td class="menu_td">男</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">广州</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="item">
+                    <h3>添加学生信息</h3>
+                    <form action="#" method="post">
+                        <table class="edit_table">
+                            <tr>
+                                <td class="edit_left"><label for="username">姓名</label></td>
+                                <td class="edit_right">
+                                    <input name="username" id="username" class="username" placeholder="请输入姓名">
+                                    <div class="username_warn">请输入8个以内中文字符!</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="student_id">学号</label></td>
+                                <td class="edit_right">
+                                    <input name="student_id" id="student_id" class="student_id" placeholder="请输入学号">
+                                    <div class="student_id_warn">请输入9位正整数!</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="age">年龄</label></td>
+                                <td class="edit_right">
+                                    <input name="age" id="age" class="age" placeholder="请输入年龄">
+                                    <div class="age_warn">请输入小于3位的正整数!</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="edit_left"><label>性别</label></td>
+                                <td class="edit_right">
+                                    <input type="radio" name="sex" value="male" checked="checked"> 男
+                                    <input type="radio" name="sex" value="female"> 女
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="class">年级</label></td>
+                                <td class="edit_right">
+                                    <select name="class">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                        <option data-idex="1">大一</option>
+                                        <option data-idex="2">大二</option>
+                                        <option data-idex="2">大三</option>
+                                        <option data-idex="2">大四</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="college">学院</label></td>
+                                <td class="edit_right">
+                                    <select name="college" class="college">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="sub0">专业</label></td>
+                                <td class="edit_right">
+                                    <select name="sub0" class="sub0">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="address">家庭住址</label></td>
+                                <td class="edit_right"><input name="address" id="address" class="address"
+                                        placeholder="请输入家庭住址"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" id="btn0" class="btn_add" value="确定"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="item">
+                    <h3>查询学生信息</h3>
+                    <form action="#" method="post">
+                        <table>
+                            <tr class="name1">
+                                <td><label for="username1" class="l">姓名</label></td>
+                                <td>
+                                    <input name="username1" id="username1" class="username1" placeholder="请输入姓名">
+                                </td>
+                            </tr>
+                            <tr class="id1">
+                                <td><label for="student_id1" class="l">学号</label></td>
+                                <td><input name="student_id1" id="student_id1" class="student_id1" placeholder="请输入学号">
+                                </td>
+                            </tr>
+                            <tr class="age1">
+                                <td><label for="ag1" class="l">年龄</label></td>
+                                <td><input name="ag1" id="ag1" class="ag1" placeholder="请输入年龄"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="sex1">
+                                <td><label class="l">性别</label></td>
+                                <td>
+                                    <input type="radio" name="sex" value="male" checked="checked"> 男
+                                    <input type="radio" name="sex" value="female"> 女
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="class1">
+                                <td><label for="class1" class="l">年级</label></td>
+                                <td>
+                                    <select name="class1" class="grade">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                        <option data-idex="1">大一</option>
+                                        <option data-idex="2">大二</option>
+                                        <option data-idex="2">大三</option>
+                                        <option data-idex="2">大四</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="college1">
+                                <td><label for="college1" class="l">学院</label></td>
+                                <td>
+                                    <select name="college" class="college">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="subject1">
+                                <td><label for="sub1" class="l">专业</label></td>
+                                <td>
+                                    <select name="sub1" class="sub1">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="address1">
+                                <td><label for="address">家庭住址</label></td>
+                                <td><input name="ad1" id="ad1" class="address1" placeholder="请输入家庭住址"></td>
+                            </tr>
+                            <tr class="submit1">
+                                <td>
+                                    <input type="submit" id="btn1" class="btn_search" value="确定">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <h3>查询结果</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">学号</th>
+                                    <th class="menu_th">姓名</th>
+                                    <th class="menu_th">年龄</th>
+                                    <th class="menu_th">性别</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学院</th>
+                                    <th class="menu_th">专业</th>
+                                    <th class="menu_th">家庭住址</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">13515163321</td>
+                                    <td class="menu_td">张三</td>
+                                    <td class="menu_td">22</td>
+                                    <td class="menu_td">男</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">广州</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="item">
+                    <h3>查看教师信息</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">编号</th>
+                                    <th class="menu_th">姓名</th>
+                                    <th class="menu_th">年龄</th>
+                                    <th class="menu_th">性别</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学院</th>
+                                    <th class="menu_th">专业</th>
+                                    <th class="menu_th">家庭住址</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">13515163321</td>
+                                    <td class="menu_td">张三</td>
+                                    <td class="menu_td">22</td>
+                                    <td class="menu_td">男</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">广州</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="item">
+                    <h3>添加教师信息</h3>
+                    <form action="#" method="post">
+                        <table class="edit_table">
+                            <tr>
+                                <td class="edit_left"><label for="username">姓名</label></td>
+                                <td class="edit_right">
+                                    <input name="username" id="username3" class="username" placeholder="请输入姓名">
+                                    <div class="username_warn">请输入8个以内中文字符!</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="student_id">编号</label></td>
+                                <td class="edit_right">
+                                    <input name="student_id" id="student_id3" class="student_id" placeholder="请输入教师编号">
+                                    <div class="student_id_warn">请输入9位正整数!</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="age">年龄</label></td>
+                                <td class="edit_right">
+                                    <input name="age" id="age3" class="age" placeholder="请输入年龄">
+                                    <div class="age_warn">请输入小于3位的正整数!</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="edit_left"><label>性别</label></td>
+                                <td class="edit_right">
+                                    <input type="radio" name="sex" value="male" checked="checked"> 男
+                                    <input type="radio" name="sex" value="female"> 女
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="class">年级</label></td>
+                                <td class="edit_right">
+                                    <select name="class">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                        <option data-idex="1">大一</option>
+                                        <option data-idex="2">大二</option>
+                                        <option data-idex="2">大三</option>
+                                        <option data-idex="2">大四</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="college">学院</label></td>
+                                <td class="edit_right">
+                                    <select name="college" class="college">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="sub2">专业</label></td>
+                                <td class="edit_right">
+                                    <select name="sub2" class="sub2">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit_left"><label for="address">家庭住址</label></td>
+                                <td class="edit_right"><input name="address" id="address" class="address"
+                                        placeholder="请输入家庭住址"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" id="btn2" class="btn_add" value="确定"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    </form>
+                </div>
+                <div class="item">
+                    <h3>查询教师信息</h3>
+                    <form action="#" method="post">
+                        <table>
+                            <tr class="name1">
+                                <td><label for="username4" class="l">姓名</label></td>
+                                <td><input name="username4" id="username4" class="username1" placeholder="请输入姓名"></td>
+                            </tr>
+                            <tr class="id1">
+                                <td><label for="student_id4" class="l">编号</label></td>
+                                <td><input name="student_id4" id="student_id4" class="student_id1" placeholder="请输入学号">
+                                </td>
+                            </tr>
+                            <tr class="age1">
+                                <td><label for="ag4" class="l">年龄</label></td>
+                                <td><input name="ag4" id="ag4" class="ag1" placeholder="请输入年龄"></td>
+                            </tr>
+                            <tr></tr>
+
+                            <tr class="sex1">
+                                <td><label class="l">性别</label></td>
+                                <td>
+                                    <input type="radio" name="sex4" value="male" checked="checked"> 男
+                                    <input type="radio" name="sex4" value="female"> 女
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="class1">
+                                <td><label for="class4" class="l">年级</label></td>
+                                <td>
+                                    <select name="class4" class="grade">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                        <option data-idex="1">大一</option>
+                                        <option data-idex="2">大二</option>
+                                        <option data-idex="2">大三</option>
+                                        <option data-idex="2">大四</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="college1">
+                                <td><label for="college1" class="l">学院</label></td>
+                                <td>
+                                    <select name="college" class="college">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="subject1">
+                                <td><label for="sub3" class="l">专业</label></td>
+                                <td>
+                                    <select name="sub3" class="sub3">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="address1">
+                                <td><label for="address">家庭住址</label></td>
+                                <td><input name="ad1" id="ad1" class="address1" placeholder="请输入家庭住址"></td>
+                            </tr>
+                            <tr class="submit1">
+                                <td><input type="submit" id="btn3" class="btn_search" value="确定"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <h3>查询结果</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">编号</th>
+                                    <th class="menu_th">姓名</th>
+                                    <th class="menu_th">年龄</th>
+                                    <th class="menu_th">性别</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学院</th>
+                                    <th class="menu_th">专业</th>
+                                    <th class="menu_th">家庭住址</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">13515163321</td>
+                                    <td class="menu_td">张三</td>
+                                    <td class="menu_td">22</td>
+                                    <td class="menu_td">男</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">广州</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                </div>
+                <div class="item">
+                    <h3>查看班级信息</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">所在学院</th>
+                                    <th class="menu_th">班级</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学生人数</th>
+                                    <th class="menu_th">教师人数</th>
+                                    <th class="menu_th">男女比例</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">30</td>
+                                    <td class="menu_td">3</td>
+                                    <td class="menu_td">10:1</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="item">
+                    <h3>查询班级信息</h3>
+                    <form action="#" method="post">
+                        <table>
+                            <tr class="class1">
+                                <td><label for="class1" class="l">年级</label></td>
+                                <td>
+                                    <select name="class1">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                        <option data-idex="1">大一</option>
+                                        <option data-idex="2">大二</option>
+                                        <option data-idex="2">大三</option>
+                                        <option data-idex="2">大四</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="college1">
+                                <td><label for="college1" class="l">学院</label></td>
+                                <td>
+                                    <select name="college" class="college">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="subject1">
+                                <td><label for="sub4" class="l">专业</label></td>
+                                <td>
+                                    <select name="sub4" class="sub4">
+                                        <option data-idex="">---------------请选择---------------</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="submit1">
+                                <td><input type="submit" id="btn4" class="btn_search" value="确定"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <h3>查询结果</h3>
+                    <form action="#" method="post">
+                        <table width="100%" hight="100%" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="menu_th">序号</th>
+                                    <th class="menu_th">所在学院</th>
+                                    <th class="menu_th">班级</th>
+                                    <th class="menu_th">年级</th>
+                                    <th class="menu_th">学生人数</th>
+                                    <th class="menu_th">教师人数</th>
+                                    <th class="menu_th">男女比例</th>
+                                    <th class="menu_th">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu_td">1</td>
+                                    <td class="menu_td">信息学院</td>
+                                    <td class="menu_td">人工智能</td>
+                                    <td class="menu_td">大三</td>
+                                    <td class="menu_td">30</td>
+                                    <td class="menu_td">3</td>
+                                    <td class="menu_td">10:1</td>
+                                    <td class="menu_td">
+                                        <input type="submit" class="button1" value="编辑">
+                                        <input type="submit" class="button2" value="删除">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="item">
+                    <form action="#" method="post">
+                        <table id="personal" cellpadding="0" cellspacing="0">
+                            <caption id="per_captional">
+                                <span id="personal_icon" class="iconfont iconfont_left">&#xe70b;</span>
+                                账号信息
+                            </caption>
+                            <tr>
+                                <th class="personal_th" width="200px">用户名 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">zhang</div>
+                                    <input type="text" id="per_username" class="personal_in">
+                                    <div class="personal_warn">请输入8个以内字符!</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="personal_th" width="200px">账号 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">123456789</div>
+                                    <input type="text" id="per_account" class="personal_in">
+                                    <div class="personal_warn">请输入9位正整数!</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="personal_th" width="200px">密码 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">abc123</div>
+                                    <input type="text" id="per_password" class="personal_in">
+                                    <div class="personal_warn">请输入12个以内非中文字符!</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="personal_th" width="200px">姓名 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">张三</div>
+                                    <input type="text" id="per_name" class="personal_in">
+                                    <div class="personal_warn">请输入8个以内中文字符!</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="personal_th" width="200px">手机号 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">13344556677</div>
+                                    <input type="text" id="per_phonenum" class="personal_in">
+                                    <div class="personal_warn">请输入11位正整数!</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="personal_th" width="200px">性别 :</th>
+                                <th class="personal_th">
+                                    <div class="per_l">男</div>
+                                    <div class="personal_in" id="personal_sex" value=''>
+                                        <input type="radio" name="sex" value="男" checked="checked"> 男
+                                        <input type="radio" name="sex" value="女"> 女
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <input type="button" id="personal_btn" value="编辑">
+                                </th>
+                                <th>
+                                    <input type="submit" id="personal_btn1" value="确定">
+                                </th>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./menu_data.js"></script>
+        <script src="./menu.js"></script>
+
+</body>
+
+</html>
